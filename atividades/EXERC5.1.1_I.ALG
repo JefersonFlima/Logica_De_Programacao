@@ -1,29 +1,24 @@
 Algoritmo "Exerc5.1.1_I"
 // Disciplina   : [Lógica de Programação e javascript]
 // Professor   : Jailson Costa dos santos
-// Descrição   : lê os valores digitados ate que seja um numero negativo
-//               e exibe o maior e menor numero
+// Descrição   : lê 10 valores e apresenta seu total e media aritmetica
 // Autor(a)    : Jeferson Fagundes
 // Data atual  : 03/09/2021
 
 Var
-   // Seção de Declarações das variáveis
-   valorMaior,valorMenor,valor:inteiro
+   cont, num, somatorio: Inteiro
+   media : Real
+
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   valorMenor<-0
-   escreval("digite um valor")
-   leia(valor)
-   valorMaior<-valor
-   enquanto valor>=0 faca
-      escreval("digite um valor")
-      leia(valor)
-      se valor>valorMaior entao
-         valorMaior<-valor
-      senao
-      fimse
-   fimenquanto
-   valorMenor<-valor
-   escreval("o maior valor é",valorMaior)
-   escreval("o menor valor é",valorMenor)
+   cont<-1
+   somatorio<-0
+   Enquanto cont <=10 faca
+      Escreva ("Digite um número: ")
+      Leia (num)
+      somatorio<-somatorio+num
+      media<-(somatorio/10)
+      cont<-cont+1
+   FimEnquanto
+   Escreval ("o somatório de todos os valores digitados é: ", somatorio)
+   Escreval ("a média aritmética de todos os valores é: ", media)
 Fimalgoritmo
